@@ -1,0 +1,41 @@
+.Wrapper {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    & .Title {
+        width: 80%;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .Info {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0, 0.5);
+        margin-bottom: 15px;
+    }
+
+    .Card_stack {
+        display: grid;
+        grid-template-rows: 45px 1fr;
+        order: 1;
+    }
+
+    .Button {
+        width: 370px;
+        height: 60px;
+        padding: 5px;
+        margin: 30px 0 10px 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+        order: 2;
+    }
+}

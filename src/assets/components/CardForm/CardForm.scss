@@ -1,0 +1,92 @@
+.Card_form {
+    width: 370px;
+    color: rgb(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-family: 'PT Mono';
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    input,
+    select {
+        width: 100%;
+        height: 45px;
+        margin: 0;
+        border: 1px solid rgb(0, 0, 0, 0.5);
+        border-radius: 5px;
+        background-color: white;
+        padding: 0;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .Small_inputs {
+        display: flex;
+        justify-content: space-between;
+
+        &.Expiration_input,
+        .CCV_input {
+            width: 43%;
+        }
+
+    }
+}
+
+
+
+
+.bitcoin {
+    background:
+        url('./icons/vendor-bitcoin.svg') no-repeat top right,
+        linear-gradient(0deg, #FFAE34, #FFAE34),
+        linear-gradient(248.04deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 99.07%);
+    background-position: right 25px top 20px;
+    color: black;
+}
+
+.ninja {
+    background:
+        url('./icons//vendor-ninja.svg') no-repeat top right,
+        linear-gradient(0deg, #222222, #222222),
+        linear-gradient(248.3deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    background-position: right 25px top 20px;
+    color: white;
+
+    .owner__info,
+    .expiration__info {
+        color: white;
+    }
+}
+
+.evil {
+    background:
+        url('./icons//vendor-evil.svg') no-repeat top right,
+        linear-gradient(0deg, #F33355, #F33355),
+        linear-gradient(248.3deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0) 100%);
+    background-position: right 25px top 20px;
+    color: black;
+}
+
+.blockchain {
+    background:
+        url('./icons/vendor-blockchain.svg') no-repeat top right,
+        linear-gradient(0deg, #8B58F9, #8B58F9),
+        linear-gradient(248.52deg, rgba(0, 0, 0, 0.15) 1.49%, rgba(0, 0, 0, 0) 100%);
+    background-position: right 25px top 20px;
+    color: white;
+}
+
+.Button {
+    width: 101%;
+    height: 60px;
+    padding: 5px;
+    margin: 30px 0 10px 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}

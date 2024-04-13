@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+.Card_box {
+    width: 370px;
+    height: 241px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(195, 197, 200);
+    font-family: 'PT Mono';
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+        padding: 25px 0 0 25px;
+        width: 45px;
+    }
+}
+
+.Card_number {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 15px 0;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+
+.Owner,
+.Expiration {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+
+    & .Owner__info,
+    .Expiration__info {
+        font-size: 10px;
+        margin: 0 0 5px 0;
+    }
+
+    .Owner__name,
+    .Expiration__date {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 0 0 20px;
+    }
+
+}
+
+.Expiration {
+    width: 100px;
+}
