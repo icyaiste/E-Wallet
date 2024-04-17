@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import AddNewCardReducer from '../reducers/AddNewCard';
 
+
 const store = configureStore({
   reducer:
   {
@@ -8,4 +9,4 @@ const store = configureStore({
   }
 });
 
-export default store
+export default store;

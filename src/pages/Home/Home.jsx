@@ -13,7 +13,7 @@ function Home() {
     setActiveCard(card);
   }
 
-  const card = useSelector(state => state.AddNewCard);
+  const card = useSelector(state => state.AddNewCard); //Accessing the AddNewCard state from store
   // console.log(card);
 
   const navigate = useNavigate();
@@ -23,15 +23,13 @@ function Home() {
 
   return (
     <section className='Wrapper'>
-      <h1 className='Title'> E-WALLET</h1>
+      <h1 className='Title'> E-wallet</h1>
       <p className='Info'>active card</p>
       {activeCard && <ActiveCard {...activeCard} />}
       <section className='Card_stack'>
         {card.map((card, index) => {
           return (
             <Card
-              style={{
-               top: index === card.length - 1 ? '0px' : '140px'}}
               key={index}
               cardNumber={card.cardNumber}
               cardHolderName={card.cardHolderName}

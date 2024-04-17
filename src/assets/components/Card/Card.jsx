@@ -19,7 +19,7 @@ function Card({cardNumber, cardHolderName, expirationDate, vendor, vendorIcon, o
         </div>
         <div className='Expiration'>
           <p className='Expiration__info'>valid thru</p>
-          <p className='xpiration__date'>{expirationDate}</p>
+          <p className='Expiration__date'>{expirationDate}</p>
         </div>
       </footer>
     </main>

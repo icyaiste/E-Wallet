@@ -1,6 +1,6 @@
 .Wrapper {
     width: 400px;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,17 +25,17 @@
 
     .Card_stack {
         display: grid;
-        grid-template-rows: 45px 1fr;
-        order: 1;
+        grid-template-rows: 45px 45px 45px 45px 45px 45px 1fr;  /*kan lägga till max 7 kort*/
+        grid-gap: 10px;
     }
 
     .Button {
         width: 370px;
         height: 60px;
         padding: 5px;
-        margin: 30px 0 10px 0;
+        margin: 50 0 30px 0;
         font-size: 1rem;
         text-transform: uppercase;
-        order: 2;
+        flex-shrink: 0;
     }
 }

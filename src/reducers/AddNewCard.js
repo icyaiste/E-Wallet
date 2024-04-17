@@ -7,7 +7,7 @@ const AddNewCardSlice = createSlice({
     initialState,
     reducers: {
         AddNewCard: (state, action) => {
-            console.log(action); //payload är item man skickar med
+            console.log(action.payload); //payload är item man skickar med
             return [...state, action.payload];
         }
     }
