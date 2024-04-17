@@ -1,3 +1,11 @@
+En digital plånbok som samlar alla kreditkort. Det går att lägga till kort, välja aktivt kort.
+Det är en single file application(SPA) som använder react-router, Redux och Redux toolkit.
+Se Figma skissen.
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
