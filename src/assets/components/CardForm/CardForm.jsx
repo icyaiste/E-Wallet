@@ -26,7 +26,7 @@ function CardForm({ cardNumber, setCardNumber, cardHolderName, setCardHolderName
     };
 
     return (
-        <form className='Card_form'>
+        <form className='Card_form' onSubmit={handleSubmit}>
             <article>
                 <p>Card number</p>
                 <input type='text' value={cardNumber} onChange={(event) => setCardNumber(event.target.value)} />
@@ -52,7 +52,7 @@ function CardForm({ cardNumber, setCardNumber, cardHolderName, setCardHolderName
                     <option value='evil'>Evil Corp</option>
                 </select>
             </article>
-            <button className='Button' onClick={handleSubmit}>Add card</button>
+            <button className='Button' type='submit'>Add card</button>
         </form>
     )
 }
